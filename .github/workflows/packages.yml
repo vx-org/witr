@@ -1,0 +1,25 @@
+name: Runtime packages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ["witr-*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: runtime-packages-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
+
+jobs:
+  packages:
+    permissions:
+      contents: write
+    uses: vx-org/vx-rez-packages/.github/workflows/runtime-release.yml@2fdd747e7548976ca447ced3777f0bf8c319349d
+    with:
+      definition: recipe.json
+      tooling-ref: 2fdd747e7548976ca447ced3777f0bf8c319349d
+      publish: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/witr-') }}
