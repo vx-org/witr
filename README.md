@@ -40,3 +40,5 @@ matrix. A `witr-0.3.4` tag can publish only after all six native builds and the
 complete release index pass. It uploads a draft, downloads and verifies every
 asset, and makes the verified draft public. Publication and installed VX
 acceptance are separate gates.
+
+Windows ARM uses the checksum-pinned published x64 VX bootstrap because VX 0.9.35 has no Windows ARM asset. The runtime smoke uses native ARM Python and the upstream ARM witr executable. This validates the witr package; it does not establish a native Windows ARM VX release.
