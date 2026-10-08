@@ -6,6 +6,7 @@
   "upstream_manifest": "https://github.com/pranshuparmar/witr/releases/download/v0.3.4/SHA256SUMS",
   "compatibility": {"rez_next": ">=0.3.9", "vx_rez_adapter": ">=0.1.0"},
   "package": {
+    "definition": {"source": "package.py", "sha256": "230c92b02087004f97136d0eda93058735a0fb8f07835556a1bb5f0263225eb9"},
     "description": "Why is this running? Process ancestry and diagnostics",
     "tools": ["witr"],
     "path_entries": ["payload/bin"],

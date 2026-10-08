@@ -18,8 +18,8 @@ jobs:
   packages:
     permissions:
       contents: write
-    uses: vx-org/vx-rez-packages/.github/workflows/runtime-release.yml@83328160f794c63fff138df3d87398094efec4c3
+    uses: vx-org/vx-rez-packages/.github/workflows/runtime-release.yml@8099f1eb02e846f1107e6e0618ea38bb0997467a
     with:
       definition: recipe.json
-      tooling-ref: 83328160f794c63fff138df3d87398094efec4c3
+      tooling-ref: 8099f1eb02e846f1107e6e0618ea38bb0997467a
       publish: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/witr-') }}
