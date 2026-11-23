@@ -42,3 +42,14 @@ asset, and makes the verified draft public. Publication and installed VX
 acceptance are separate gates.
 
 Windows ARM uses the checksum-pinned published x64 VX bootstrap because VX 0.9.35 has no Windows ARM asset. The runtime smoke uses native ARM Python and the upstream ARM witr executable. This validates the witr package; it does not establish a native Windows ARM VX release.
+
+## Repository license
+
+The recipe, metadata, and build configuration in this repository are available
+under the MIT License in [LICENSE](LICENSE). The packaged `witr` executable and
+its bundled third-party notices retain the upstream licenses recorded under
+`metadata/` and in each generated bundle.
+
+## Attribution and trademarks
+
+The repository tooling remains under the existing MIT license in [LICENSE](LICENSE). Packaged upstream runtimes and third-party notices retain their own licenses. Commercial distribution contact is welcome and is not required. See [NOTICE](NOTICE) and [TRADEMARKS.md](TRADEMARKS.md).
