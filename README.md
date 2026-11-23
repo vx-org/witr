@@ -49,3 +49,7 @@ The recipe, metadata, and build configuration in this repository are available
 under the MIT License in [LICENSE](LICENSE). The packaged `witr` executable and
 its bundled third-party notices retain the upstream licenses recorded under
 `metadata/` and in each generated bundle.
+
+## Attribution and trademarks
+
+The repository tooling remains under the existing MIT license in [LICENSE](LICENSE). Packaged upstream runtimes and third-party notices retain their own licenses. Commercial distribution contact is welcome and is not required. See [NOTICE](NOTICE) and [TRADEMARKS.md](TRADEMARKS.md).
